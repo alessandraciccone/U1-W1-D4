@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boxmodel</title>
+
+    <style>
+      .boxmodel {
+        /* le proprietà di width e height funzionano solo con elementi di blocco, come div, p, section, non funzionano con elementi inline come gli span o gli h1 ecc */
+        width: 300px;
+        height: 300px;
+        border: 2px solid blue;
+        padding: 30px;
+        margin: 50px;
+        /*il padding contri buisce alla larghezza dell'elemento. infatti aggiungendo padding all'elemento la scritta gilberto si è staccata e l'elemento di blocco si è ingradito, ma tutto risulta comunque essere di dimensione 3300, in quanto definita da me. tutti gli elementi facenti parte dell'elemento di blocco, faranno semopre 300*/
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h2>Come funziona il Boxmodel in CSS</h2>
+      </section>
+
+      <div class="boxmodel"><span>Gilberto</span></div>
+    </main>
+  </body>
+</html>
